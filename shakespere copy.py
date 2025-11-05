@@ -24,8 +24,7 @@ if roman_num and sonnet_lines:
 
 # Optional: check
 print(f"Loaded {len(sonnets)} sonnets.")
-print(sonnets[0]) 
 for sonnet in sonnets:
     for roman_num, lines in sonnet.items():
-        print(f"{roman_num}: {lines[0]}")
+        print(f"{roman_num}: {lines[:2]}")
 
